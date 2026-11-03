@@ -82,7 +82,7 @@
 
 **Роль:** Python Developer
 
-**GitHub:** https://github.com/nevdaha99
+**GitHub:** https://github.com/MishaPankov
 
 Проєкт був розроблений для практики роботи з Python, Flask, JavaScript, взаємодії з шаблонізатором Jinja2, обробки динамічних даних через data-* атрибути та побудови адаптивного інтерфейсу вебзастосунку.
 
