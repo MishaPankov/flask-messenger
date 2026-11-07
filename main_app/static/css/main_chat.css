@@ -1116,3 +1116,8 @@ body {
 .delete-account-row:hover {
   text-decoration: underline;
 }
+
+.users-header-row {
+  display: flex;
+  align-items: center;
+}

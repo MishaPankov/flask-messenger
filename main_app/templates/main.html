@@ -119,11 +119,13 @@
     <hr class="search-divider">
     <div class="delete-chat">
       <h3>Ваш чат</h3>
+      {% if chat %}
       <form action="{{ url_for('main.delete_chat') }}" method="POST">
         <button type="submit" class="delete-chat-btn">
           <img src="{{ url_for('main.static', filename='img/delete.png') }}" alt="" class="delete-button-icon">
         </button>
       </form>
+      {% endif %}
     </div>
     <div id="delete-chat-modal" class="modal hidden">
       <div class="modal-content">
@@ -254,8 +256,10 @@
 
   <div class="right-panel">
     <div class="users-title">
-      <img src="{{ url_for('main.static', filename='img/exit_chat.png') }}" alt="" class="exit-icon">
-      <h3>Користувачі</h3>
+      <div class="users-header-row">
+        <img src="{{ url_for('main.static', filename='img/exit_chat.png') }}" alt="" class="exit-icon">
+        <h3>Користувачі</h3>
+      </div>
       <div class="users-stats">
         <span class="stat-item">
           <img src="{{ url_for('main.static', filename='img/users.png') }}" alt="" class="user-icon">

@@ -67,6 +67,7 @@ class Chat(DATABASE.Model):
                 return f"{seconds // 60 // 60}год тому"
             else:
                 return f"{seconds // 60 // 60 // 24}д тому"
+        return ""
 
 
 class Messages(DATABASE.Model):
